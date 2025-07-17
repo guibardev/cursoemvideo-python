@@ -1,15 +1,21 @@
 import pyautogui
 import time
-
-pyautogui.alert('Olá! Isso é um teste com PyAutoGUI.')
-
 # pyautogui.hotkey('alt' , 'tab', 'esc')
 # time.sleep(300/1000)
 # pyautogui.write('QQQQ', interval=0.25)
 
-#pyautogui.hotkey('alt', 'tab')
-#time.sleep(3000 / 1000)
-#pyautogui.hotkey('esc')
-#time.sleep(3000 / 1000)
-#pyautogui.hotkey('Q')
-
+# pyautogui.alert('Olá! O programa vai iniciar!')
+# pyautogui.press('enter')
+time.sleep(2000 / 1000)
+pyautogui.hotkey('alt', 'tab')
+time.sleep(2000 / 1000)
+pyautogui.hotkey('esc')
+time.sleep(1000 / 1000)
+pyautogui.hotkey('q')
+time.sleep(1000 / 1000)
+pyautogui.keyDown('space')
+pyautogui.keyDown('w')
+time.sleep(0.2)
+pyautogui.keyUp('space')
+time.sleep(1000 / 1000)
+pyautogui.keyDown('w')
